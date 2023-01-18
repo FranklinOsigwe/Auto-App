@@ -1,0 +1,204 @@
+@import "./variable.scss";
+
+.ride-hailing {
+    .jumbotron {
+        background-image: url("https://storage.googleapis.com/cars45-web-bucket/inspection-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 400px;
+    }
+    .get-inspected {
+        @media (min-width: 1300px) {
+            .container,
+            .container-lg,
+            .container-md,
+            .container-sm,
+            .container-xl {
+                max-width: 1300px;
+            }
+        }
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+        .inspect-img img {
+            width: 400px;
+            margin-top: 100px;
+        }
+        .inspect-img p {
+            color: $cr-orange;
+            font-size: 19.5px;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+        .inspect-info-img img {
+            width: 70px;
+            // height: 70px;
+        }
+        .book {
+            width: 50px !important;
+        }
+        .report {
+            width: 50px !important;
+        }
+        .inspect-header {
+            margin-bottom: 50px;
+            color: $cr-dark;
+        }
+        .details p {
+            color: $cr-darkgrey;
+            font-size: 22px;
+        }
+        .btn-secondary {
+            padding: 15px 45px !important;
+            margin-left: 40px;
+            box-shadow: none !important;
+            font-weight: 700;
+        }
+        .other-info p {
+            color: $cr-darkgrey;
+            font-size: 22px;
+        }
+        .bottom-div {
+            display: flex;
+            justify-content: center;
+            height: 55px;
+            background: $cr-tealgreen;
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: 20px;
+        }
+        .bottom-div p {
+            margin-bottom: 0;
+            align-self: center;
+            color: $cr-white;
+        }
+        .bottom-div img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+    .modal {
+        .btn-link {
+            box-shadow: none !important;
+        }
+        .close {
+            width: 40px;
+        }
+        .modal-body {
+            padding-top: 5px;
+            width: 580px;
+        }
+        .logo {
+            margin-left: 20px;
+        }
+        .question {
+            padding-left: 110px;
+            padding-right: 110px;
+            border-bottom: solid 1px $cr-darkgrey;
+            margin-top: 20px;
+        }
+        .question p {
+            color: $cr-darkgrey;
+        }
+        h3 {
+            color: #9f9b9b;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .btn-outline-secondary {
+            border-color: #75787a;
+            width: 400px;
+            color: #75787a;
+            padding: 10px 40px;
+            margin-bottom: 30px;
+        }
+        .btn-outline-secondary:hover {
+            border-color: #75787a;
+            width: 400px;
+            color: #ffffff;
+            background-color: #75787a;
+            box-shadow: none;
+        }
+        .btn-outline-secondary:focus {
+            border-color: #75787a;
+            width: 400px;
+            color: #75787a;
+            background-color: transparent;
+            box-shadow: none !important;
+        }
+        .modal-content {
+            width: inherit !important;
+        }
+        .modal-dialog {
+            max-width: 580px;
+        }
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media screen and (max-width: 576px) {
+        .modal {
+            .modal-content {
+                width: 100% !important;
+            }
+            .modal-body {
+                width: 100%;
+            }
+            .logo {
+                width: 100px;
+                margin-left: 50px;
+            }
+            .close {
+                width: 30px;
+                margin-top: -5px;
+            }
+            .question {
+                padding-left: 0px;
+                padding-right: 0px;
+                border-bottom: solid 1px #707070;
+                margin-top: 20px;
+            }
+            .btn-success {
+                width: 100%;
+            }
+            .btn-outline-secondary {
+                width: 100%;
+            }
+        }
+        .jumbotron {
+            background-size: contain;
+            height: 100px;
+        }
+        .get-inspected {
+            padding-top: 0px;
+        }
+        .inspect-info-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .get-inspected .bottom-div {
+            padding-left: 20px;
+        }
+        .inspect-img {
+            display: none;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+        .jumbotron {
+            height: 217px;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+    }
+}

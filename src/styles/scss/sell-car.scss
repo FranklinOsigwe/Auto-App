@@ -1,0 +1,96 @@
+.sell-car {
+  position: relative;
+  width: 100%;
+  .hero {
+    background-image: url("https://storage.googleapis.com/cars45-web-bucket/car_sell.webp");
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;
+    padding: 0;
+    .overley {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(15, 202, 193, 0.3);
+    }
+  }
+  .text-area {
+    margin: 0 auto;
+    margin-top: -400px;
+    .heading {
+      font: normal normal bold 60px/30px Roboto;
+      letter-spacing: 1.6px;
+      color: #ffffff;
+
+      line-height: 1em;
+      text-shadow: 0px 3px 6px #00000029;
+    }
+    form {
+      background: #eeeeee 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+
+      padding: 5em;
+      margin: 0 auto;
+      margin-bottom: 5em;
+      input,
+      select {
+        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+        border: 1px solid var(--unnamed-color-21b7ac);
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #21b7ac;
+        border-radius: 5px;
+        height: 43px;
+        margin-bottom: 1em;
+      }
+      button {
+        background: var(--unnamed-color-ff9101) 0% 0% no-repeat padding-box;
+        background: #ff9101 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        text-align: left;
+        font: normal normal bold 25px/18px Roboto;
+        letter-spacing: 0.6px;
+        color: #222121;
+        border: none;
+        padding: 0.5em 1em;
+        margin: 0 auto;
+        margin-bottom: 5em;
+      }
+    }
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media screen and (max-width: 576px) {
+    .text-area .heading {
+      font-size: 2rem;
+    }
+    .hero {
+      background-size: contain;
+    }
+    .text-area form {
+      background: #eeeeee 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      padding: 2em;
+      margin: 0 auto;
+      margin-bottom: 5em;
+    }
+    .text-area form button {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
+}
